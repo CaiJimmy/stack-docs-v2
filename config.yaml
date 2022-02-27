@@ -1,0 +1,86 @@
+baseurl: https://docs.stack.jimmycai.com
+languageCode: en-us
+theme: hugo-theme-stack
+paginate: 5
+title: Hugo Theme Stack Docs
+DefaultContentLanguage: en
+
+languages:
+    en:
+        title: Hugo Theme Stack Docs
+        weight: 1
+        hasCJKLanguage: false
+        languageName: English
+    zh-cn:
+        title: Hugo 主题 Stack
+        weight: 2
+        hasCJKLanguage: true
+        languageName: 中文
+
+params:
+    mainSections:
+        - post
+    rssFullContent: true
+    favicon:
+
+    footer:
+        since: 2020
+
+    sidebar:
+        emoji:
+        subtitle: Card-style Hugo theme designed for bloggers
+        avatar:
+            enabled: true
+            local: true
+            src: img/logo.jpg
+
+    article:
+        math: false
+        toc: true
+        readingTime: true
+        license:
+            enabled: true
+            default: Licensed under CC BY-NC-SA 4.0
+
+    widgets:
+        homepage:
+            - type: search
+        page:
+            - type: toc
+menu:
+    main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: -100
+          params:
+              icon: home
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    goldmark:
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: false
+    tableOfContents:
+        endLevel: 4
+        ordered: true
+        startLevel: 2
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: true
+        tabWidth: 4

@@ -1,5 +1,6 @@
 ---
-title: Configuration
+title: Configuration file
+weight: 2
 ---
 
 > Theme's newest configuration file can be found in [exampleSite/config.yaml](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/exampleSite/config.yaml).   

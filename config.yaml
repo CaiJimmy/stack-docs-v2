@@ -47,15 +47,8 @@ params:
             - type: search
         page:
             - type: toc
-menu:
-    main:
-        - identifier: home
-          name: Home
-          url: /
-          weight: -100
-          params:
-              icon: home
-
+            - type: search
+            
 related:
     includeNewer: true
     threshold: 60
@@ -81,6 +74,6 @@ markup:
         codeFences: true
         guessSyntax: true
         lineNoStart: 1
-        lineNos: true
+        lineNos: false
         lineNumbersInTable: true
         tabWidth: 4

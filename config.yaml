@@ -2,17 +2,17 @@ baseurl: https://docs.stack.jimmycai.com
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
-title: Hugo Theme Stack Docs
+title: Stack Docs
 DefaultContentLanguage: en
 
 languages:
     en:
-        title: Hugo Theme Stack Docs
+        title: Stack Docs
         weight: 1
         hasCJKLanguage: false
         languageName: English
     zh-cn:
-        title: Hugo 主题 Stack
+        title: Stack 主题文档
         weight: 2
         hasCJKLanguage: true
         languageName: 中文
@@ -27,6 +27,7 @@ params:
         since: 2020
 
     sidebar:
+        compact: true
         emoji:
         subtitle: Card-style Hugo theme designed for bloggers
         avatar:
@@ -43,8 +44,6 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     widgets:
-        homepage:
-            - type: search
         page:
             - type: toc
             - type: search
